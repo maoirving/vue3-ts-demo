@@ -3,16 +3,15 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
   </div>
+  <el-button @click="printJobs">hello</el-button>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { defineComponent } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
-export default defineComponent({
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-})
+const printJobs = () => {
+  console.log(1)
+}
+
 </script>
