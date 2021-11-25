@@ -1,17 +1,11 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+  <div class="home"></div>
   <el-button @click="printJobs">hello</el-button>
 </template>
 
 <script lang="ts" setup>
-import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
 
 const printJobs = () => {
   console.log(1)
 }
-
 </script>
