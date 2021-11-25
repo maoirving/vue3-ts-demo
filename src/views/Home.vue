@@ -1,17 +1,23 @@
 <template>
-  <div class="home"></div>
-  <el-button @click="printJobs">hello</el-button>
-  <p>hello mao</p>
+  <div class="home">
+    <AppHeader />
+    <el-button @click="printJobs">hello</el-button>
+    <p>hello mao</p>
+  </div>
 </template>
 
 <script lang="ts" setup>
+import AppHeader from '@/components/AppHeader.vue'
+import { ref } from 'vue'
+
+const flag = ref<boolean>(true)
 const printJobs = () => {
-  console.log(1)
+  flag.value = true
 }
 </script>
 
 <style lang="scss" scoped>
-p {
-  color: $c-green-400;
+.home {
+  padding: 20px;
 }
 </style>
