@@ -2,7 +2,7 @@ const path = require('path')
 const { resolve } = path
 module.exports = {
   devServer: {
-    // hot: true, 
+    // hot: true,
     // liveReload: true,
     // open: true,
     proxy: {
@@ -13,6 +13,13 @@ module.exports = {
         pathRewrite: {
           '^/api': '/',
         },
+      },
+    },
+  },
+  css: {
+    loaderOptions: {
+      sass: {
+        prependData: `@import "@/assets/styles/utils/variable.scss";`, //在 sass-loader v8 中，这个选项名是 "prependData"，其他为 "additionalData"
       },
     },
   },

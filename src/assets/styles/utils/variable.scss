@@ -1,0 +1,81 @@
+/* Variables
+   ========================================================================== */
+
+/**
+ * Normalize
+*/
+
+$font-family-base: 'Roboto', 'Arial', sans-serif !default;
+$font-size-base: 16px;
+$line-height-base: 1.3333;
+$dt-font-weight: 400;
+$link-decoration: underline;
+$link-hover-decoration: none;
+$transition: all 0.3s;
+$cursor-disabled: not-allowed;
+
+/**
+ * Color
+*/
+/* Theme Color */
+// gray
+$c-gray-50: #f9fafb !default;
+$c-gray-100: #f3f4f6 !default;
+$c-gray-200: #e5e7eb !default;
+$c-gray-300: #d1d5db !default;
+$c-gray-400: #9ca3af !default;
+$c-gray-500: #6b7280 !default;
+$c-gray-600: #4b5563 !default;
+$c-gray-700: #374151 !default;
+$c-gray-800: #1f2937 !default;
+$c-gray-900: #111827 !default;
+
+// green
+$c-green-100: #d1fae5 !default;
+$c-green-200: #a7f3d0 !default;
+$c-green-300: #6ee7b7 !default;
+$c-green-400: #34d399 !default;
+$c-green-500: #10b981 !default;
+$c-green-600: #059669 !default;
+$c-green-700: #047857 !default;
+$c-green-800: #065f46 !default;
+$c-green-900: #064e3b !default;
+
+// red
+$c-red-300: #fca5a5 !default;
+$c-red-400: #f87171 !default;
+$c-red-500: #ef4444 !default;
+$c-red-600: #dc2626 !default;
+
+$c-success: #28a745 !default;
+$c-warning: #ffc107 !default;
+$c-danger: #dc3545 !default;
+$c-white: #fff !default;
+$c-black: #000 !default;
+$c-orange: #f18e00 !default;
+$c-brown: #784700 !default;
+
+// $c-gray-200: #e8e8e8 !default;
+// $c-gray-400: #9fa3af !default;
+// $c-gray-500: #61687c !default;
+// $c-gray-600: #414a60 !default;
+// $c-gray-700: #424a5e !default;
+/**
+ * Gap
+*/
+$gap-xs: 5px;
+$gap-sm: 10px;
+$gap: 15px;
+$gap-lg: 20px;
+
+/**
+ * Size
+*/
+// border
+$solid-gray: 1px solid $c-gray-200;
+$dotted-gray: 1px dotted $c-gray-200;
+$dashed-gray: 1px dashed $c-gray-200;
+
+$solid-green: 1px solid $c-green-600;
+$dotted-green: 1px dotted $c-green-600;
+$dashed-green: 1px dashed $c-green-600;
