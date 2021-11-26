@@ -15,6 +15,11 @@ const routes: Array<RouteRecordRaw> = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "note" */ '../views/note/index.vue'),
   },
+  {
+    path: '/note/tool',
+    name: 'NoteTool',
+    component: () => import('@/views/note/tool-note.vue'),
+  },
 ]
 
 const router = createRouter({

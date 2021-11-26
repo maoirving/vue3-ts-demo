@@ -1,9 +1,23 @@
 <template>
-  <div>learning</div>
+  <div>Note</div>
+  <ul>
+    <li v-for="(link, index) in links" :key="index">
+      <router-link :to="link.url">{{ link.title }}</router-link>
+    </li>
+  </ul>
 </template>
 
-<script>
-export default {}
-</script>
+<script lang="ts" setup>
+import { ref } from 'vue'
+import { AnyObject } from '@/utils/types'
 
-<style></style>
+const links = ref<Array<AnyObject>>([])
+links.value.push(
+  ...[
+    {
+      title: 'About tool',
+      url: '/note/tool',
+    },
+  ]
+)
+</script>
