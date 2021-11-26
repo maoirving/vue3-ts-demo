@@ -1,8 +1,9 @@
 <template>
-  <div class="tool-note-page">
+  <div class="container tool-note-page">
+    <h3>About tool</h3>
     <ul>
       <li v-for="(note, index) in toolNote" :key="index">
-        <h3>{{ note.question }}</h3>
+        <h4>{{ note.question }}</h4>
         <p>{{ note.answer }}</p>
       </li>
     </ul>

@@ -16,6 +16,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "note" */ '../views/note/index.vue'),
   },
   {
+    path: '/note/vue',
+    name: 'NoteVue',
+    component: () => import('@/views/note/vue-note.vue'),
+  },
+  {
+    path: '/note/js',
+    name: 'NoteJs',
+    component: () => import('@/views/note/js-note.vue'),
+  },
+  {
     path: '/note/tool',
     name: 'NoteTool',
     component: () => import('@/views/note/tool-note.vue'),
