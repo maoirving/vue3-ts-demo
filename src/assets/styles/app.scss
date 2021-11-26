@@ -1,8 +1,16 @@
-// import utils
-@import 'utils/normalize.scss';
-@import 'utils/variable.scss';
-@import 'utils/mixin.scss';
+// ------- normally ---------
 
-// import base
-@import './base/reset.scss';
-@import './base/helper.scss';
+// // import utils
+// @import 'utils/normalize.scss';
+// @import 'utils/variable.scss';
+// @import 'utils/mixin.scss';
+
+// // import base
+// @import './base/reset.scss';
+// @import './base/helper.scss';
+
+// ------- use import-glob-loader2 ---------
+@import 'utils/*.scss';
+@import 'base/*.scss';
+@import 'layout/*.scss';
+@import 'components/*.scss';
