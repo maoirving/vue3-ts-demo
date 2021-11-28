@@ -12,9 +12,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { AnyObject } from '@/utils/types'
+import { IAnyObject } from '@/utils/types'
 
-const toolNote = ref<Array<AnyObject>>([])
+const toolNote = ref<Array<IAnyObject>>([])
 toolNote.value.push(
   ...[
     {
