@@ -20,6 +20,10 @@ const links = ref<Array<AnyObject>>([
     url: '/note/vue',
   },
   {
+    title: 'About ts',
+    url: '/note/ts',
+  },
+  {
     title: 'About js',
     url: '/note/js',
   },
