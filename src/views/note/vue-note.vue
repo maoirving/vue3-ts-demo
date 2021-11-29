@@ -7,19 +7,21 @@
         <p>{{ note.answer }}</p>
       </li>
     </ul>
+    <VueNoteList title="hello hello" :num="2" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
+import { defineProps, ref } from 'vue'
 import { AnyObject } from '@/utils/types'
+import VueNoteList from '@/components/note/vue-note-list.vue'
 
 const vueNote = ref<Array<AnyObject>>([])
 vueNote.value.push(
   ...[
     {
-      question: 'yarn 安装在dev',
-      answer: 'yarn add <package...> [--dev/-D]',
+      question: 'use <script setup>',
+      answer: '见代码',
     },
   ]
 )

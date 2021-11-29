@@ -3,7 +3,7 @@
     <h2>Note list</h2>
     <ul>
       <li v-for="(link, index) in links" :key="index">
-        <span>{{ index + 1 }}. </span>
+        <!-- <span>{{ index + 1 }}. </span> -->
         <router-link :to="link.url">{{ link.title }}</router-link>
       </li>
     </ul>
@@ -18,6 +18,10 @@ const links = ref<Array<AnyObject>>([
   {
     title: 'About vue',
     url: '/note/vue',
+  },
+  {
+    title: 'About ts',
+    url: '/note/ts',
   },
   {
     title: 'About js',

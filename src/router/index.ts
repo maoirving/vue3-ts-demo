@@ -21,6 +21,11 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/note/vue-note.vue'),
   },
   {
+    path: '/note/ts',
+    name: 'NoteTs',
+    component: () => import('@/views/note/ts-note.vue'),
+  },
+  {
     path: '/note/js',
     name: 'NoteJs',
     component: () => import('@/views/note/js-note.vue'),
