@@ -13,10 +13,10 @@
 
 <script lang="ts" setup>
 import { defineProps, ref } from 'vue'
-import { AnyObject } from '@/utils/types'
+import { IAnyObject } from '@/utils/types'
 import VueNoteList from '@/components/note/vue-note-list.vue'
 
-const vueNote = ref<Array<AnyObject>>([])
+const vueNote = ref<Array<IAnyObject>>([])
 vueNote.value.push(
   ...[
     {

@@ -12,9 +12,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { AnyObject } from '@/utils/types'
+import { IAnyObject } from '@/utils/types'
 
-const links = ref<Array<AnyObject>>([
+const links = ref<Array<IAnyObject>>([
   {
     title: 'About vue',
     url: '/note/vue',

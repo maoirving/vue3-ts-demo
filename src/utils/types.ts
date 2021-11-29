@@ -1,3 +1,3 @@
-export interface AnyObject {
+export interface IAnyObject {
   [propName: string]: any
 }
